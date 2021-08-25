@@ -3,12 +3,8 @@
   background-image: url(./images/newBg.png);
   background-size:cover;
   background-position: center;
+  width:auto;
   height:100vh;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -19,7 +15,7 @@ justify-content: space-around;
   display: inline-block;
   width:260px;
   height:60px;
-  margin-top:10px;
+  margin-top:16px;
   cursor:pointer;
 }
 nav ul{
@@ -34,14 +30,16 @@ nav ul li a{
   text-decoration: none;
   font-size:16px;
   color:black;
+  margin:6px;
 }
-.login-btn button{
+.login-btn {
   background-color: orangered;
   border:none;
   color:black;
-  margin-top:20px;
   border-radius: 5px;
-  padding:5px 10px;
+  padding:6px 12px;
+  cursor:pointer;
+
  
 }
 .active{
@@ -49,16 +47,31 @@ nav ul li a{
   font-weight:600;
 }
 
+.container{
 
-.App-link {
-  color: #61dafb;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  flex-direction: row;
+  flex-wrap:wrap;
+  height:100vh;
+}
+ .box{
+  width:180px;
+  height:180px;
+  background-color:white;
+  cursor:pointer;
+
+}
+.container img{
+  width:100px;
+  height:100px;
+  display:inline-block;
+  padding:10px;
+  
+}
+.container h3{
+  text-transform: uppercase;
+  color:dimgray
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
